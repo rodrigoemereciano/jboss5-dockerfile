@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  jboss:
+    container_name: jboss-app-teste
+    hostname: jboss-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8081:8080/tcp
+      - 8009:8009/tcp
+    
